@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="WowAlts.Views.Horde.HordeMainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WowAlts.Views.Horde"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModels="using:WowAlts.ViewModels"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+<Page.DataContext>
+        <viewModels:ViewModel></viewModels:ViewModel>
+</Page.DataContext>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.Background>
+            <ImageBrush 
+                Stretch="Fill" 
+                ImageSource="../../Assets/Shadowlands.jpg"
+            >
+            </ImageBrush>
+        </Grid.Background>
+
+        <ListView 
+            Grid.Column="1" 
+            Grid.ColumnSpan="3" 
+            Grid.Row="2" 
+            HorizontalAlignment="Center" 
+            ItemsSource="{Binding CharacterList}"
+            ItemTemplate="{StaticResource Test}"
+        >
+
+        </ListView>
+
+    </Grid>
+</Page>
+
