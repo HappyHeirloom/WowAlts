@@ -1,0 +1,44 @@
+CREATE TABLE [dbo].[Class] (
+    [Id]    INT          NOT NULL,
+    [Class] VARCHAR (12) DEFAULT ('Warrior') NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[Realm] (
+    [Id]    INT          NOT NULL,
+    [Realm] VARCHAR (50) DEFAULT ('Dragonblight') NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[Faction] (
+    [Id]      INT         NOT NULL,
+    [Faction] VARCHAR (8) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[Spec] (
+    [Id]       INT          IDENTITY (1, 1) NOT NULL,
+    [Class_FK] INT          DEFAULT ((1)) NOT NULL,
+    [Spec]     VARCHAR (50) DEFAULT ('Fury') NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_Spec_Class] FOREIGN KEY ([Class_FK]) REFERENCES [dbo].[Class] ([Id])
+);
+
+CREATE TABLE [dbo].[Character] (
+    [Id]            INT          IDENTITY (1, 1) NOT NULL,
+    [Name]          VARCHAR (12) NOT NULL,
+    [Realm_FK]      INT          DEFAULT ((3)) NOT NULL,
+    [Faction_FK]    INT          DEFAULT ((2)) NOT NULL,
+    [Class_FK]      INT          DEFAULT ((1)) NOT NULL,
+    [Class_Spec_FK] INT          DEFAULT ((2)) NOT NULL,
+    [Level]         INT          DEFAULT ((120)) NOT NULL,
+    [Ilvl]          INT          DEFAULT ((380)) NOT NULL,
+    [HoA]           INT          DEFAULT ((1)) NOT NULL,
+    [Cloak]         INT          DEFAULT ((0)) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_Character_Faction] FOREIGN KEY ([Faction_FK]) REFERENCES [dbo].[Faction] ([Id]),
+    CONSTRAINT [FK_Character_Realm] FOREIGN KEY ([Realm_FK]) REFERENCES [dbo].[Realm] ([Id]),
+    CONSTRAINT [FK_Character_Spec] FOREIGN KEY ([Class_Spec_FK]) REFERENCES [dbo].[Spec] ([Id]),
+    CONSTRAINT [FK_Character_Class] FOREIGN KEY ([Class_FK]) REFERENCES [dbo].[Class] ([Id])
+);
+
