@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\EG\source\repos\WowAlts\WowAlts\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-07-18T20:45:04.486</Modified>
+      <Modified>2020-07-19T13:35:26.194</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\bin\x86\Debug\WowAlts.exe">
       <PackagePath>entrypoint\WowAlts.exe</PackagePath>
-      <Modified>2020-07-18T20:45:03.440</Modified>
+      <Modified>2020-07-19T13:35:25.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EG\.nuget\packages\microsoft.aspnet.webapi.client\5.2.7\lib\netstandard2.0\System.Net.Http.Formatting.dll">
       <PackagePath>System.Net.Http.Formatting.dll</PackagePath>
@@ -126,23 +126,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\bin\x86\Debug\WowAlts.xr.xml">
       <PackagePath>WowAlts.xr.xml</PackagePath>
-      <Modified>2020-07-18T20:03:26.825</Modified>
+      <Modified>2020-07-19T13:28:17.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-07-18T20:45:03.337</Modified>
+      <Modified>2020-07-19T13:28:17.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-07-18T20:45:03.337</Modified>
+      <Modified>2020-07-19T13:25:16.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\bin\x86\Debug\Views\Alliance\AllianceMainPage.xbf">
       <PackagePath>Views\Alliance\AllianceMainPage.xbf</PackagePath>
-      <Modified>2020-07-18T20:45:03.337</Modified>
+      <Modified>2020-07-19T13:25:16.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\bin\x86\Debug\Views\Horde\HordeMainPage.xbf">
       <PackagePath>Views\Horde\HordeMainPage.xbf</PackagePath>
-      <Modified>2020-07-18T20:45:03.337</Modified>
+      <Modified>2020-07-19T13:25:16.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -154,7 +154,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\bin\x86\Debug\Core\WowAlts.exe">
       <PackagePath>WowAlts.exe</PackagePath>
-      <Modified>2020-07-18T20:45:04.482</Modified>
+      <Modified>2020-07-19T13:35:26.192</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
