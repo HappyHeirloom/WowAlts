@@ -10,6 +10,7 @@ namespace WowAltsWS
         public WowAltsDBContext()
             : base("name=WowAltsDBContext")
         {
+            base.Configuration.ProxyCreationEnabled = false;
         }
 
         public virtual DbSet<Character> Character { get; set; }
@@ -17,7 +18,11 @@ namespace WowAltsWS
         public virtual DbSet<Faction> Faction { get; set; }
         public virtual DbSet<Realm> Realm { get; set; }
         public virtual DbSet<Spec> Spec { get; set; }
+        public virtual DbSet<Classes> Classes { get; set; }
+        public virtual DbSet<Factions> Factions { get; set; }
         public virtual DbSet<JoinCharacter> JoinCharacter { get; set; }
+        public virtual DbSet<Realms> Realms { get; set; }
+        public virtual DbSet<Specs> Specs { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -71,6 +76,14 @@ namespace WowAltsWS
                 .HasForeignKey(e => e.Class_Spec_FK)
                 .WillCascadeOnDelete(false);
 
+            modelBuilder.Entity<Classes>()
+                .Property(e => e.Class)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Factions>()
+                .Property(e => e.Faction)
+                .IsUnicode(false);
+
             modelBuilder.Entity<JoinCharacter>()
                 .Property(e => e.Realm)
                 .IsUnicode(false);
@@ -88,6 +101,18 @@ namespace WowAltsWS
                 .IsUnicode(false);
 
             modelBuilder.Entity<JoinCharacter>()
+                .Property(e => e.Spec)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Realms>()
+                .Property(e => e.Realm)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Specs>()
+                .Property(e => e.Class)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Specs>()
                 .Property(e => e.Spec)
                 .IsUnicode(false);
         }

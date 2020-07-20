@@ -19,6 +19,11 @@ namespace WowAlts.Handlers
         public ObservableCollection<JoinCharacter> CharactersAlliance { get; }
         public ObservableCollection<JoinCharacter> CharactersHorde { get; }
 
+        public ObservableCollection<Realm> Realms { get; }
+        public ObservableCollection<Faction> Factions { get; }
+        public ObservableCollection<Class> Classes { get; }
+        public ObservableCollection<Specs> Specs { get; }
+
 
         private DBHandlerSingleton()
         {
@@ -27,8 +32,16 @@ namespace WowAlts.Handlers
             CharactersAlliance = new ObservableCollection<JoinCharacter>();
             CharactersHorde = new ObservableCollection<JoinCharacter>();
 
+            Realms = new ObservableCollection<Realm>();
+            Factions = new ObservableCollection<Faction>();
+            Classes = new ObservableCollection<Class>();
+            Specs = new ObservableCollection<Specs>();
 
             LoadCharactersAsync();
+            LoadRealmsAsync();
+            LoadFactionsAsync();
+            LoadClassesAsync();
+            LoadSpecsAsync();
         }
 
 
@@ -51,5 +64,46 @@ namespace WowAlts.Handlers
             }
 
         }
+
+        public async void LoadRealmsAsync()
+        {
+            ObservableCollection<Realm> realms = await PersistencyService.LoadRealms();
+
+            foreach (var realm in realms)
+            {
+                Realms.Add(realm);
+            }
+        }
+
+        public async void LoadFactionsAsync()
+        {
+            ObservableCollection<Faction> factions = await PersistencyService.LoadFactions();
+
+            foreach (var faction in factions)
+            {
+                Factions.Add(faction);
+            }
+        }
+
+        public async void LoadClassesAsync()
+        {
+            ObservableCollection<Class> classes = await PersistencyService.LoadClasses();
+
+            foreach (var classItem in classes)
+            {
+                Classes.Add(classItem);
+            }
+        }
+
+        public async void LoadSpecsAsync()
+        {
+            ObservableCollection<Specs> specs = await PersistencyService.LoadSpecs();
+
+            foreach (var specItem in specs)
+            {
+                Specs.Add(specItem);
+            }
+        }
+
     }
 }

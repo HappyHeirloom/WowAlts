@@ -119,6 +119,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Handlers\CreateCharacterHandler.cs" />
     <Compile Include="Handlers\DBHandlerSingleton.cs" />
     <Compile Include="Handlers\ExceptionHandler.cs" />
     <Compile Include="Handlers\NavigationHandler.cs" />
@@ -132,6 +133,7 @@
     <Compile Include="Models\JoinCharacter.cs" />
     <Compile Include="Models\Realm.cs" />
     <Compile Include="Models\Spec.cs" />
+    <Compile Include="Models\Specs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\PersistencyService.cs" />
     <Compile Include="ViewModels\ViewModel.cs" />
@@ -151,9 +153,12 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Back.JPG" />
     <Content Include="Assets\CharacterBackground.jpg" />
     <Content Include="Assets\CharacterBackgroundRound.jpg" />
     <Content Include="Assets\CreateCharacter.JPG" />
+    <Content Include="Assets\DeleteCharacter.JPG" />
+    <Content Include="Assets\Finish.JPG" />
     <Content Include="Assets\GoBack.JPG" />
     <Content Include="Assets\horde.jpg" />
     <Content Include="Assets\LadyJaina.jpg" />

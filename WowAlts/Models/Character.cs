@@ -34,12 +34,12 @@ namespace WowAlts.Models
 
         public virtual Realm Realm { get; set; }
 
-        public virtual Spec Spec { get; set; }
+        public virtual Spec Specs { get; set; }
 
         public override string ToString()
         {
             return
-                $"Your Character: {Name}, {Spec} {Class} on realm {Realm} is a {Faction} character, which is level {Level} with an ILvl of {Ilvl}. Its cloak is rank {Cloak} and HoA is {HoA}";
+                $"Your Character: {Name}, {Specs} {Class} on realm {Realm} is a {Faction} character, which is level {Level} with an ILvl of {Ilvl}. Its cloak is rank {Cloak} and HoA is {HoA}";
         }
     }
 }

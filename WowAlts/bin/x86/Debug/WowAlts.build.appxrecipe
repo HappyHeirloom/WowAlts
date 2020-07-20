@@ -55,6 +55,9 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\Assets\Back.JPG">
+      <PackagePath>Assets\Back.JPG</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\Assets\CharacterBackground.jpg">
       <PackagePath>Assets\CharacterBackground.jpg</PackagePath>
     </AppxPackagedFile>
@@ -63,6 +66,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\Assets\CreateCharacter.JPG">
       <PackagePath>Assets\CreateCharacter.JPG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\Assets\DeleteCharacter.JPG">
+      <PackagePath>Assets\DeleteCharacter.JPG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\Assets\Finish.JPG">
+      <PackagePath>Assets\Finish.JPG</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\Assets\GoBack.JPG">
       <PackagePath>Assets\GoBack.JPG</PackagePath>

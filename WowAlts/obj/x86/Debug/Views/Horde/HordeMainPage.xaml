@@ -45,23 +45,30 @@
             Grid.ColumnSpan="3" 
             Grid.Row="1" 
             Grid.RowSpan="3"
-            Margin="20,20,20,30"
+            Margin="20,20,20,40"
             MinHeight="200"
             ItemsSource="{Binding CharacterList, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
             ItemTemplate="{StaticResource Test}"
+            SelectedItem="{Binding SelectedCharacter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
         >
             <ListView.Resources>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="MaxHeight" Value="200"></Setter>
+                </Style>
                 <SolidColorBrush x:Key="ListViewItemBackgroundSelected" Color="Yellow" Opacity="0.1" />
                 <SolidColorBrush x:Key="ListViewItemBackgroundSelectedPointerOver" Color="Yellow" Opacity="0.15"/>
             </ListView.Resources>
         </ListView>
 
+        <!--<StackPanel Grid.Column="3" Grid.Row="1" Margin="20,10,20,40" VerticalAlignment="Center">
+            <Image Height="75" HorizontalAlignment="Right" VerticalAlignment="Center" Source="../../Assets/horde.jpg"></Image>
+        </StackPanel>-->
 
-        <Button Grid.Column="1" Grid.Row="3" VerticalAlignment="Bottom" MaxWidth="200" Padding="0" Margin="5" Command="{Binding GoToCreateAlt}">
+        <Button Grid.Column="1" Grid.Row="3" VerticalAlignment="Bottom" MaxWidth="200" Padding="0" Margin="5" Command="{Binding NavigateToCreateAltCommand}">
             <Image Source="../../Assets/CreateCharacter.JPG"/>
         </Button>
-        <Button Grid.Column="3" Grid.Row="3" VerticalAlignment="Bottom" HorizontalAlignment="Right" MaxWidth="30" MaxHeight="30" BorderThickness="0" Padding="0" Margin="5" Command="{Binding GoBackToHomeCommand}">
-            <Image Source="../../Assets/GoBack.JPG"/>
+        <Button Grid.Column="3" Grid.Row="3" VerticalAlignment="Bottom" HorizontalAlignment="Right" MaxWidth="100" Padding="0" Margin="5" Command="{Binding GoBackToHomeCommand}">
+            <Image Source="../../Assets/Back.JPG"/>
         </Button>
     </Grid>
 </Page>

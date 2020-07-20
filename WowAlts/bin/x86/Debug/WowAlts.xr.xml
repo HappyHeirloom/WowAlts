@@ -11,9 +11,11 @@
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="NavigateToHordeCommand" />
     <RootPropertyPathName Name="NavigateToAllianceCommand" />
+    <RootPropertyPathName Name="CreateAltCommand" />
     <RootPropertyPathName Name="GoBackToHomeCommand" />
-    <RootPropertyPathName Name="GoToCreateAlt" />
+    <RootPropertyPathName Name="NavigateToCreateAltCommand" />
     <RootPropertyPathName Name="CharacterList" />
+    <RootPropertyPathName Name="SelectedCharacter" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -111,8 +113,6 @@
       <RootProperty Name="MaxWidth" />
       <RootProperty Name="Padding" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="MaxHeight" />
-      <RootProperty Name="BorderThickness" />
     </RootType>
     <RootType FullName="WowAlts.MainPage" />
     <RootType FullName="WowAlts.Views.Alliance.AllianceMainPage" />
@@ -122,9 +122,13 @@
       <RootProperty Name="MinHeight" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="SelectedItem" />
       <RootProperty Name="Resources" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="MaxHeight" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
       <RootProperty Name="Opacity" />

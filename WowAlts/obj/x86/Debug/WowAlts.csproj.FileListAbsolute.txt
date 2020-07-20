@@ -64,9 +64,9 @@ C:\Users\EG\source\repos\WowAlts\WowAlts\bin\x86\Debug\System.Net.Http.Formattin
 C:\Users\EG\source\repos\WowAlts\WowAlts\bin\x86\Debug\Newtonsoft.Json.Bson.dll
 C:\Users\EG\source\repos\WowAlts\WowAlts\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.CommonWebApiResources.resw
 C:\Users\EG\source\repos\WowAlts\WowAlts\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.Resources.resw
-C:\Users\EG\source\repos\WowAlts\WowAlts\obj\x86\Debug\WowAlts.csprojAssemblyReference.cache
 C:\Users\EG\source\repos\WowAlts\WowAlts\obj\x86\Debug\Views\CreateAltPage.g.i.cs
 C:\Users\EG\source\repos\WowAlts\WowAlts\obj\x86\Debug\Views\CreateAltPage.g.cs
 C:\Users\EG\source\repos\WowAlts\WowAlts\obj\x86\Debug\Views\CreateAltPage.xaml
 C:\Users\EG\source\repos\WowAlts\WowAlts\obj\x86\Debug\Views\CreateAltPage.xbf
 C:\Users\EG\source\repos\WowAlts\WowAlts\bin\x86\Debug\Views\CreateAltPage.xbf
+C:\Users\EG\source\repos\WowAlts\WowAlts\obj\x86\Debug\WowAlts.csprojAssemblyReference.cache
