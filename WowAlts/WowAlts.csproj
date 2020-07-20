@@ -129,6 +129,7 @@
     <Compile Include="Models\Character.cs" />
     <Compile Include="Models\Class.cs" />
     <Compile Include="Models\Faction.cs" />
+    <Compile Include="Models\JoinCharacter.cs" />
     <Compile Include="Models\Realm.cs" />
     <Compile Include="Models\Spec.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -136,6 +137,9 @@
     <Compile Include="ViewModels\ViewModel.cs" />
     <Compile Include="Views\Alliance\AllianceMainPage.xaml.cs">
       <DependentUpon>AllianceMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreateAltPage.xaml.cs">
+      <DependentUpon>CreateAltPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Horde\HordeMainPage.xaml.cs">
       <DependentUpon>HordeMainPage.xaml</DependentUpon>
@@ -147,6 +151,11 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\CharacterBackground.jpg" />
+    <Content Include="Assets\CharacterBackgroundRound.jpg" />
+    <Content Include="Assets\CreateCharacter.JPG" />
+    <Content Include="Assets\GoBack.JPG" />
+    <Content Include="Assets\horde.jpg" />
     <Content Include="Assets\LadyJaina.jpg" />
     <Content Include="Assets\Shadowlands.jpg" />
     <Content Include="Assets\Sylvanas.jpg" />
@@ -172,6 +181,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\CreateAltPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Horde\HordeMainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -192,6 +205,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="Assets\Fonts\Morpheus.TTF" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

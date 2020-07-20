@@ -55,6 +55,21 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\Assets\CharacterBackground.jpg">
+      <PackagePath>Assets\CharacterBackground.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\Assets\CharacterBackgroundRound.jpg">
+      <PackagePath>Assets\CharacterBackgroundRound.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\Assets\CreateCharacter.JPG">
+      <PackagePath>Assets\CreateCharacter.JPG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\Assets\GoBack.JPG">
+      <PackagePath>Assets\GoBack.JPG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\Assets\horde.jpg">
+      <PackagePath>Assets\horde.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\Assets\LadyJaina.jpg">
       <PackagePath>Assets\LadyJaina.jpg</PackagePath>
     </AppxPackagedFile>
@@ -94,6 +109,9 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\Assets\Fonts\Morpheus.TTF">
+      <PackagePath>Assets\Fonts\Morpheus.TTF</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\bin\x86\Debug\WowAlts.xr.xml">
       <PackagePath>WowAlts.xr.xml</PackagePath>
     </AppxPackagedFile>
@@ -105,6 +123,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\bin\x86\Debug\Views\Alliance\AllianceMainPage.xbf">
       <PackagePath>Views\Alliance\AllianceMainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\bin\x86\Debug\Views\CreateAltPage.xbf">
+      <PackagePath>Views\CreateAltPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\EG\source\repos\WowAlts\WowAlts\bin\x86\Debug\Views\Horde\HordeMainPage.xbf">
       <PackagePath>Views\Horde\HordeMainPage.xbf</PackagePath>

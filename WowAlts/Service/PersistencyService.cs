@@ -13,9 +13,9 @@ namespace WowAlts.Service
     class PersistencyService
     {
         const string serverUrl = "http://localhost:51887/";
-        public static ObservableCollection<Character> characterList { get; set; }
+        public static ObservableCollection<JoinCharacter> characterList { get; set; }
 
-        public static async Task<ObservableCollection<Character>> LoadCharacters()
+        public static async Task<ObservableCollection<JoinCharacter>> LoadCharacters()
         {
             HttpClientHandler handler = new HttpClientHandler();
             handler.UseDefaultCredentials = true;
@@ -25,12 +25,12 @@ namespace WowAlts.Service
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                characterList = new ObservableCollection<Character>();
+                characterList = new ObservableCollection<JoinCharacter>();
 
                 try
                 {
-                    var response = client.GetAsync("api/Characters").Result;
-                    var characters = response.Content.ReadAsAsync<IEnumerable<Character>>().Result;
+                    var response = client.GetAsync("api/JoinCharacters").Result;
+                    var characters = response.Content.ReadAsAsync<IEnumerable<JoinCharacter>>().Result;
 
                     if (response.IsSuccessStatusCode)
                     {

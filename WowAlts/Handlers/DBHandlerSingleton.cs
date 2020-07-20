@@ -15,17 +15,17 @@ namespace WowAlts.Handlers
         private static DBHandlerSingleton _instance = null;
         public static DBHandlerSingleton Instance { get { return _instance ?? (_instance = new DBHandlerSingleton()); } }
 
-        public ObservableCollection<Character> Characters { get; }
-        public ObservableCollection<Character> CharactersAlliance { get; }
-        public ObservableCollection<Character> CharactersHorde { get; }
+        public ObservableCollection<JoinCharacter> Characters { get; }
+        public ObservableCollection<JoinCharacter> CharactersAlliance { get; }
+        public ObservableCollection<JoinCharacter> CharactersHorde { get; }
 
 
         private DBHandlerSingleton()
         {
             
-            Characters = new ObservableCollection<Character>();
-            CharactersAlliance = new ObservableCollection<Character>();
-            CharactersHorde = new ObservableCollection<Character>();
+            Characters = new ObservableCollection<JoinCharacter>();
+            CharactersAlliance = new ObservableCollection<JoinCharacter>();
+            CharactersHorde = new ObservableCollection<JoinCharacter>();
 
 
             LoadCharactersAsync();
@@ -34,16 +34,16 @@ namespace WowAlts.Handlers
 
         public async void LoadCharactersAsync()
         {
-            ObservableCollection<Character> characters = await PersistencyService.LoadCharacters();
+            ObservableCollection<JoinCharacter> characters = await PersistencyService.LoadCharacters();
 
             foreach (var character in characters)
             {
-                switch (character.Faction_FK)
+                switch (character.Faction.ToLower())
                 {
-                    case 1:
+                    case "alliance":
                         CharactersAlliance.Add(character);
                         break;
-                    case 2:
+                    case "horde":
                         CharactersHorde.Add(character);
                         break;
                 }

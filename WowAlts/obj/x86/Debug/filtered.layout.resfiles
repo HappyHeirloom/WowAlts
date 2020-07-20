@@ -1,4 +1,10 @@
 WinMetadata\Windows.winmd
+Assets\CharacterBackground.jpg
+Assets\CharacterBackgroundRound.jpg
+Assets\CreateCharacter.JPG
+Assets\Fonts\Morpheus.TTF
+Assets\GoBack.JPG
+Assets\horde.jpg
 Assets\LadyJaina.jpg
 Assets\LockScreenLogo.scale-200.png
 Assets\Shadowlands.jpg
@@ -12,6 +18,7 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 MainPage.xbf
 Views\Alliance\AllianceMainPage.xbf
+Views\CreateAltPage.xbf
 Views\Horde\HordeMainPage.xbf
 WowAlts.xr.xml
 Properties\Default.rd.xml

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Windows.UI;
 using WowAlts.Handlers;
 using WowAlts.Models;
 
@@ -25,23 +26,25 @@ namespace WowAlts.ViewModels
 
             #region RelayCommands
 
+            GoBackToHomeCommand = new RelayCommand(_nav.NavigateToHome, null);
             NavigateToAllianceCommand = new RelayCommand(_nav.NavigateToAlliance, null);
             NavigateToHordeCommand = new RelayCommand(_nav.NavigateToHorde, null);
+            NavigateToCreateAltCommand = new RelayCommand(_nav.NavigateToCreateAlt, null);
 
             #endregion
         }
-
-
-
+        
         #region ICommands
 
+        public ICommand GoBackToHomeCommand { get; set; }
         public ICommand NavigateToAllianceCommand { get; set; }
         public ICommand NavigateToHordeCommand { get; set; }
+        public ICommand NavigateToCreateAltCommand { get; set; }
 
         #endregion
 
-        public ObservableCollection<Character> CharacterList { get; set; }
-        public ObservableCollection<Character> CharacterListAlliance { get; set; }
-        public ObservableCollection<Character> CharacterListHorde { get; set; }
+        public ObservableCollection<JoinCharacter> CharacterList { get; set; }
+        public ObservableCollection<JoinCharacter> CharacterListAlliance { get; set; }
+        public ObservableCollection<JoinCharacter> CharacterListHorde { get; set; }
     }
 }

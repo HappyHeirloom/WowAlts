@@ -5,32 +5,42 @@
     xmlns:local="using:WowAlts">
 
     <Application.Resources>
+        <Style TargetType="ListViewItem">
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="Opacity" Value="1"></Setter>
+        </Style>
         <DataTemplate x:Key="Test">
-            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" MinWidth="180" MaxWidth="180">
-                <TextBlock TextWrapping="Wrap" TextAlignment="Center">
-                    <Run FontWeight="Bold" Text="Character name: "/>
-                    <Run FontWeight="Light" Text="{Binding Name}"/>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" MinWidth="180" Width="1085" MaxWidth="1090">
+                <TextBlock TextWrapping="Wrap" TextAlignment="Left" FontFamily="Times new roman" FontSize="28">
+                        <Run FontWeight="ExtraBold" Foreground="Yellow" FontSize="28" Text="{Binding Name}"/> 
+                        <Run Foreground="White" Text="|"/> 
+                        <Run FontSize="18"  Foreground="DimGray" Text="{Binding Realm}"/>
                 </TextBlock>
 
-                <TextBlock TextWrapping="Wrap" TextAlignment="Center">
-                    <Run FontWeight="Bold" Text="Character Class: "/>
-                    <Run FontWeight="Light" Text="{Binding Class}"/>
+                <TextBlock TextWrapping="Wrap" TextAlignment="Left" FontSize="22"> <!-- TODO BIND FOREGROUND TO CLASS COLOR. ADD NEW FOREIGN KEY--> 
+                    <Run Text="{Binding Level}"/>
+                    <Run Foreground="White" Text="|"/> 
+                    <Run FontWeight="Light" Foreground="DarkRed"  Text="{Binding Spec}"/>
+                    <Run Foreground="White" Text="|"/> 
+                    <Run FontWeight="Light" Foreground="DarkRed"  Text="{Binding Class}"/>
                 </TextBlock>
 
-                <TextBlock TextWrapping="Wrap" TextAlignment="Center">
-                    <Run FontWeight="Bold" Text="Character spec: "/>
-                    <Run FontWeight="Light" Text="{Binding Spec}"/>
+                <TextBlock TextWrapping="Wrap" TextAlignment="Left">
+                    <Run Text="ILvl: "/>
+                    <Run FontWeight="Light" Text="{Binding Ilvl}"/>
                 </TextBlock>
 
-                <TextBlock TextWrapping="Wrap" TextAlignment="Center">
-                    <Run FontWeight="Bold" Text="Character realm: "/>
-                    <Run FontWeight="Light" Text="{Binding Realm}"/>
+                <TextBlock TextWrapping="Wrap" TextAlignment="Left">
+                    <Run Text="Heart of Azeroth: "/>
+                    <Run FontWeight="Light" Text="{Binding HoA}"/>
                 </TextBlock>
 
-                <TextBlock TextWrapping="Wrap" TextAlignment="Center">
-                    <Run FontWeight="Bold" Text="Character faction: "/>
-                    <Run FontWeight="Light" Text="{Binding Faction}"/>
+                <TextBlock TextWrapping="Wrap" TextAlignment="Left">
+                    <Run Text="Legendary cloak: "/>
+                    <Run FontWeight="Light" Text="{Binding Cloak}"/>
                 </TextBlock>
+
+                <Image HorizontalAlignment="Right" Source="Assets/horde.jpg" Opacity="1" Width="50" Height="50" Margin="0,-100,0,0"/>
             </StackPanel>
         </DataTemplate>
     </Application.Resources>

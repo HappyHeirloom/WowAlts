@@ -8,7 +8,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C9800291-F998-49D4-AC5A-7C5980B76098}</ProjectGuid>
+    <ProjectGuid>{01ABC84F-7CDA-4BC7-B52A-1FDC58702B70}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -168,6 +168,7 @@
     <Compile Include="Controllers\ClassesController.cs" />
     <Compile Include="Controllers\FactionsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JoinCharactersController.cs" />
     <Compile Include="Controllers\RealmsController.cs" />
     <Compile Include="Controllers\SpecsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -175,6 +176,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="JoinCharacter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Realm.cs" />
     <Compile Include="Spec.cs" />
@@ -280,7 +282,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>58967</DevelopmentServerPort>
+          <DevelopmentServerPort>50909</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:51887/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

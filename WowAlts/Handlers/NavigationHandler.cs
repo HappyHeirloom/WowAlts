@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using WowAlts.Views;
 using WowAlts.Views.Alliance;
 using WowAlts.Views.Horde;
 
@@ -14,6 +15,10 @@ namespace WowAlts.Handlers
     {
         private Frame frame => (Frame) ((Window.Current.Content));
 
+        public void NavigateToHome()
+        {
+            frame.Navigate(typeof(MainPage), null);
+        }
 
         public void NavigateToAlliance()
         {
@@ -23,8 +28,11 @@ namespace WowAlts.Handlers
         public void NavigateToHorde()
         {
             frame.Navigate(typeof(HordeMainPage), null);
-
         }
 
+        public void NavigateToCreateAlt()
+        {
+            frame.Navigate(typeof(CreateAltPage), null);
+        }
     }
 }
